@@ -37,7 +37,7 @@ class _MyWidgetState extends State<MyWidget> {
                 onPressed: () async {
                   print("press");
                   // API 요청
-                  final response = await Dio().get('http://localhost:8080/api/call',
+                  final response = await Dio().get('http://192.168.0.3:8080/api/call',
                   queryParameters: {'id' : 1});
 
                   print(response.realUri);
